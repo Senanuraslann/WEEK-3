@@ -1,14 +1,17 @@
-
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class MainApp {
-    public static void main(String[] args) {  //Overloading
+    public static void main(String[] args) {
+        int[] array = {3, 6, 8, 1, 34, 79, 10};
 
-        System.out.println("İki sayı toplamı: " + Overloading.sum(6, 7));
-        System.out.println("Üç sayı toplamı: " + Overloading.sum(8, 9, 5));
-        System.out.println("Ondalıklı toplam: " + Overloading.sum(3, 6));
+        int min_value = ArrayApp.min_value(array);
+        System.out.println("En küçük değer: " + min_value);
 
+        int max_value = ArrayApp.max_value(array);
+        System.out.println("En büyük değer: " + max_value);
 
+        double average_value =ArrayApp.average_value(array);
+        System.out.println("Dizideki terimlerin ortalaması: " + average_value);
     }
 }
